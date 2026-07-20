@@ -81,7 +81,7 @@ export const metadata: Metadata = {
     apple: "/logo_emmy.jpg",
   },
   verification: {
-    google: "",
+    google: "google9b13fbf594574a4f",
   },
   category: "food",
 };
