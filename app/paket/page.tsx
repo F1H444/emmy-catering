@@ -18,7 +18,8 @@ const getImageUrl = (driveId: string | undefined, placeholderUrl: string) => {
 
 export default async function PaketPage(props: { searchParams: Promise<{ [key: string]: string | string[] | undefined }> }) {
   const searchParams = await props.searchParams;
-  const paketQuery = searchParams.paket;
+  const paketRaw = searchParams.paket;
+  const paketQuery: string | undefined = Array.isArray(paketRaw) ? paketRaw[0] : paketRaw;
   
   let title = "Brosur Paket";
   let description = "Pilih paket yang sesuai dengan kebutuhan acara Anda.";
