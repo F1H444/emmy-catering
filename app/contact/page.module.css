@@ -1,0 +1,73 @@
+.contactPage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 24px;
+}
+
+.contactCard {
+  background: var(--color-black-light);
+  border: 1px solid var(--color-gold-dark);
+  border-radius: 8px;
+  padding: 40px;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.contactTitle {
+  color: var(--color-gold);
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+}
+
+.contactSubtitle {
+  color: var(--color-text-muted);
+  font-size: 1.1rem;
+  margin-bottom: 32px;
+}
+
+.adminList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.adminButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background-color: #25D366;
+  color: white;
+  padding: 16px 24px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.adminButton:hover {
+  transform: translateY(-3px);
+  background-color: #1EBE5D;
+}
+
+.adminButton svg {
+  width: 24px;
+  height: 24px;
+}
+
+.backLink {
+  display: inline-block;
+  margin-top: 32px;
+  color: var(--color-gold);
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.backLink:hover {
+  color: var(--color-gold-light);
+}

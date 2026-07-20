@@ -1,0 +1,210 @@
+{
+  "hero": {
+    "title": "Spesialis Catering Sukabumi & Sekitarnya",
+    "subtitle": "Catering Sukabumi Terbaik untuk Hari Bahagiamu",
+    "description": "Bikin acaramu makin berkesan dengan sajian istimewa dari Emmy Catering. Rasanya memuaskan, kualitas terjamin, dan pastinya bikin tamu ketagihan!",
+    "established": 2000,
+    "motto": "Kepuasan Anda adalah Prioritas Kami."
+  },
+  "about": {
+    "title": "Kenalan Yuk!",
+    "subtitle": "Catering Enak di Sukabumi, Disajikan Sepenuh Hati",
+    "description": "Di Emmy Catering, kami percaya bahwa makanan enak bisa bikin suasana acara jadi lebih hangat dan bahagia. Itulah kenapa kami selalu totalitas meracik bumbu andalan kami sejak tahun 2000.\n\nDari dapur kami di Kota Sukabumi, kami siap nemenin momen pentingmu—mulai dari kumpul keluarga, resepsi pernikahan impian, hingga acara korporat. Food for us comes from our relatives, whether they have wings or fins or roots. That is how we consider food. Food has a culture. It has a history. It has a story. It has relationships.",
+    "stats": [
+      { "value": "1000+", "label": "Acara Sukses" },
+      { "value": "24+", "label": "Tahun Pengalaman" },
+      { "value": "50+", "label": "Pilihan Menu" }
+    ]
+  },
+  "visiMisi": {
+    "title": "Visi & Misi",
+    "subtitle": "Komitmen Kami untuk Anda",
+    "visi": {
+      "title": "Visi Kami",
+      "description": "Menjadi layanan catering terdepan dan terpercaya di Kota Sukabumi serta wilayah sekitarnya, yang dikenal karena cita rasa masakan yang istimewa, pelayanan sepenuh hati, dan konsistensi kualitas dalam setiap hidangan yang disajikan."
+    },
+    "misi": {
+      "title": "Misi Kami",
+      "items": [
+        {
+          "icon": "quality",
+          "title": "Kualitas Terjamin",
+          "description": "Menggunakan bahan baku segar dan berkualitas tinggi serta teknik memasak terbaik untuk menghadirkan hidangan yang lezat, higienis, dan memuaskan di setiap acara."
+        },
+        {
+          "icon": "service",
+          "title": "Pelayanan Sepenuh Hati",
+          "description": "Memberikan pelayanan yang ramah, profesional, dan tepat waktu sehingga setiap pelanggan merasa dihargai dan acara mereka berjalan lancar tanpa hambatan."
+        },
+        {
+          "icon": "innovation",
+          "title": "Inovasi Menu Berkelanjutan",
+          "description": "Terus berinovasi dalam menciptakan variasi menu yang kreatif dan mengikuti tren kuliner, tanpa meninggalkan cita rasa tradisional Nusantara yang menjadi identitas kami."
+        },
+        {
+          "icon": "community",
+          "title": "Membangun Kepercayaan",
+          "description": "Membangun hubungan jangka panjang dengan pelanggan melalui transparansi harga, komunikasi yang baik, dan komitmen untuk selalu memberikan yang terbaik di setiap kesempatan."
+        }
+      ]
+    }
+  },
+  "features": {
+    "title": "Kenapa Pilih Kami?",
+    "subtitle": "Bikin Acaramu Makin Tenang",
+    "description": "Fokus aja ke acaramu, urusan perut tamu biar kami yang tangani. Kami siap kasih yang terbaik biar kamu makin tenang!",
+    "items": [
+      {
+        "title": "Bahan Berkualitas",
+        "description": "Kami selalu menjaga kualitas bahan baku untuk menghasilkan rasa masakan terbaik."
+      },
+      {
+        "title": "Koki Berpengalaman",
+        "description": "Tangan-tangan ahli yang paham betul meracik hidangan Nusantara maupun Western."
+      },
+      {
+        "title": "Paket Super Lengkap",
+        "description": "Dari Paket Silver hingga Super Diamond, semuanya lengkap dengan Foodstall eksklusif."
+      },
+      {
+        "title": "Tepat Waktu",
+        "description": "Nggak perlu deg-degan nunggu makanan datang telat, kami terbiasa menangani event besar on-time!"
+      },
+      {
+        "title": "Layanan Fleksibel",
+        "description": "Menu dan harga bisa disesuaikan dengan keinginan serta budget acara Anda."
+      },
+      {
+        "title": "Terpercaya Sejak 2000",
+        "description": "Dua dekade lebih kami melayani masyarakat Kota Sukabumi dan sekitarnya."
+      }
+    ]
+  },
+  "menu": {
+    "title": "Intip Menu",
+    "subtitle": "Bikin Ngiler, Kan?",
+    "description": "Banyak pilihan paket nikmat yang bisa kamu sesuaikan sama kebutuhan resepsi pernikahan dan budget kamu.",
+    "paket_folder_id": "13fob3qIGeJBj1UrTLknId7TifjeAIk9i",
+    "foodstall_folder_id": "1ScIRsdDRe6VGU36moWBkpn6rgwT5P_uK",
+    "categories": [
+      {
+        "id": "silver",
+        "name": "Paket Silver (40 Ribu)",
+        "description": "Menu lengkap mulai dari Nasi, Olahan Sapi, Olahan Ayam, Salad/Sop, Dessert, hingga Foodstall (Ice Cream, Baso/Siomay, Jasuke).",
+        "image_url": "https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&q=80",
+        "drive_id": ""
+      },
+      {
+        "id": "gold",
+        "name": "Paket Gold (45 Ribu)",
+        "description": "Upgrade dengan tambahan Gado-gado, menu olahan bervariasi, serta tambahan Lemon Tea di bagian Dessert.",
+        "image_url": "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&q=80",
+        "drive_id": ""
+      },
+      {
+        "id": "platinum",
+        "name": "Paket Platinum (50 Ribu)",
+        "description": "Pilihan lauk semakin kaya dengan tambahan Softdrink dan variasi Foodstall premium seperti D'Crepes dan Es Doger.",
+        "image_url": "https://images.unsplash.com/photo-1628294895950-9805252327bc?auto=format&fit=crop&q=80",
+        "drive_id": ""
+      },
+      {
+        "id": "diamond",
+        "name": "Paket Diamond (55 Ribu)",
+        "description": "Lebih mewah dengan tambahan Menu Ikan, Tart Cheese, dan Zupa Soup sebagai primadona gubugan Anda.",
+        "image_url": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&q=80",
+        "drive_id": ""
+      },
+      {
+        "id": "super-diamond",
+        "name": "Paket Super Diamond (60 Ribu)",
+        "description": "Paket sultan terlengkap! Nasi Goreng, Menu Beef Lidah, Menu Ayam, Menu Ikan, hingga Foodstall super mewah.",
+        "image_url": "https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?auto=format&fit=crop&q=80",
+        "drive_id": ""
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Kata Mereka",
+    "subtitle": "Cerita Manis dari Klien Emmy Catering",
+    "description": "Kepuasan Anda adalah prioritas kami. Lihat apa kata mereka yang telah mempercayakan momen spesialnya pada kami.",
+    "testimoni_folder_id": "12ojqaIsnUn6kS6VyOvvGtWUzAYsEeo8f",
+    "items": [
+      {
+        "id": 1,
+        "name": "Keluarga Bpk. Hery",
+        "event": "Resepsi Pernikahan",
+        "text": "Paket Super Diamond sangat memuaskan! Zupa Soup dan D'Crepes ludes diserbu tamu. Makanannya enak dan dekorasinya elegan.",
+        "drive_id": "1yN6D3B1n_V38F2l3kXJ8p9oK_0qY2m4z"
+      },
+      {
+        "id": 2,
+        "name": "Ibu Diana",
+        "event": "Hajatan Keluarga",
+        "text": "Pesan Paket Gold untuk acara keluarga. Daging sapi lada hitamnya empuk banget. Foodstall es krim juga bikin anak-anak senang.",
+        "drive_id": ""
+      },
+      {
+        "id": 3,
+        "name": "Rina & Dimas",
+        "event": "Wedding",
+        "text": "Dari awal konsultasi di Sukabumi sampai hari H, pelayanannya ramah banget. Kita pilih Paket Platinum dan tamu pada muji rasa makanannya.",
+        "drive_id": ""
+      },
+      {
+        "id": 4,
+        "name": "Instansi Pemerintah",
+        "event": "Corporate Event",
+        "text": "Menu prasmanan yang dihidangkan selalu konsisten lezatnya. Kambing guling dari menu foodstall adalah favorit kami semua.",
+        "drive_id": ""
+      }
+    ]
+  },
+  "documentation": {
+    "title": "Galeri Kami",
+    "subtitle": "Momen Bahagia Bersama Emmy Catering",
+    "description": "Lihat keseruan dan kehangatan di setiap acara yang kami tangani.",
+    "photo_folder_id": "1VD4hbylxlXOMif-IE2okRfrXCjj-o3Hr",
+    "video_folder_id": "1hg_qr9NnuhooCWqRtquVPgjTu5OjHt9V",
+    "photos": [
+      { "id": "p1", "drive_id": "1oF-3cRt8bQcf8NO15-kZRAbH3s8QTZi-", "placeholder_url": "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80" },
+      { "id": "p2", "drive_id": "", "placeholder_url": "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&q=80" },
+      { "id": "p3", "drive_id": "", "placeholder_url": "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&q=80" },
+      { "id": "p4", "drive_id": "", "placeholder_url": "https://images.unsplash.com/photo-1473093226795-af9932fe5856?auto=format&fit=crop&q=80" },
+      { "id": "p5", "drive_id": "", "placeholder_url": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&q=80" }
+    ],
+    "videos": [
+      { "id": "v1", "drive_id": "", "placeholder_url": "https://www.w3schools.com/html/mov_bbb.mp4" },
+      { "id": "v2", "drive_id": "", "placeholder_url": "https://www.w3schools.com/html/mov_bbb.mp4" },
+      { "id": "v3", "drive_id": "", "placeholder_url": "https://www.w3schools.com/html/mov_bbb.mp4" },
+      { "id": "v4", "drive_id": "", "placeholder_url": "https://www.w3schools.com/html/mov_bbb.mp4" }
+    ]
+  },
+  "contact": {
+    "whatsapp": ["081546884171", "081563480787", "08158889020"],
+    "instagram": "https://www.instagram.com/emmycatering",
+    "tiktok": "https://www.tiktok.com/@emmy.catering3",
+    "facebook": "https://www.facebook.com/emmy.rachmawaty.14",
+    "address": "Jl. Ar. Hakim - Benteng Gg. Cemara No. 17 (belakang Benglap)\nKota Sukabumi",
+    "hours": "Setiap Hari · Buka jam 08.00 - 16.00 WIB"
+  },
+  "brochures": [
+    {
+      "id": "b1",
+      "name": "Brosur Paket Menu",
+      "image_drive_id": "",
+      "image_placeholder_url": "https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&q=80"
+    },
+    {
+      "id": "b2",
+      "name": "Brosur Menu Foodstall",
+      "image_drive_id": "",
+      "image_placeholder_url": "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&q=80"
+    }
+  ],
+  "admins": [
+    { "id": 1, "name": "Admin 1", "whatsapp": "6281546884171" },
+    { "id": 2, "name": "Admin 2", "whatsapp": "6281563480787" },
+    { "id": 3, "name": "Admin 3", "whatsapp": "628158889020" }
+  ]
+}
