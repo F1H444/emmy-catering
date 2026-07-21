@@ -204,7 +204,7 @@ export default function Home() {
             <div className={`${styles.aboutGrid} reveal-scale delay-1`}>
               <div className={styles.aboutImageWrapper} style={{ flex: '1', borderRadius: '24px', overflow: 'hidden', minHeight: '500px', position: 'relative' }}>
                 <Image
-                  src="/emmy_team.jpg"
+                  src="/tentang.jpg"
                   alt="Tim Emmy Catering"
                   fill
                   style={{ objectFit: 'cover', objectPosition: 'center' }}
@@ -549,6 +549,7 @@ export default function Home() {
                            height="100%" 
                            style={{ border: 'none', position: 'absolute', top: 0, left: 0, borderRadius: '12px' }} 
                            allowFullScreen 
+                           allow="autoplay"
                            loading="lazy"
                          />
                        )}
