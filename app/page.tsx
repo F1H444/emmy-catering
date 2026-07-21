@@ -204,7 +204,7 @@ export default function Home() {
             <div className={`${styles.aboutGrid} reveal-scale delay-1`}>
               <div className={styles.aboutImageWrapper} style={{ flex: '1', borderRadius: '24px', overflow: 'hidden', minHeight: '500px', position: 'relative' }}>
                 <Image
-                  src="/tentang.jpg"
+                  src="/tentang_kami.png"
                   alt="Tim Emmy Catering"
                   fill
                   style={{ objectFit: 'cover', objectPosition: 'center' }}
