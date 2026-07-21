@@ -99,11 +99,11 @@ export default function PaketClient({ paketQuery }: { paketQuery: string | undef
           <p className="font-body" style={{ textAlign: 'center', color: 'var(--color-text-muted)', marginBottom: '60px', maxWidth: '600px', margin: '0 auto 60px auto' }}>
             Berbagai macam pilihan stall lezat untuk melengkapi kemeriahan acara Anda.
           </p>
-          <div style={{ columnWidth: '300px', columnGap: '24px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '24px' }}>
             {foodstalls.map((stall, index) => {
                const cleanName = stall.name.replace(/\.png|\.jpg|\.jpeg/gi, '').replace(/[-_]/g, ' ').trim().split(' ').map((w: string) => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
                return (
-                 <div key={stall.id} style={{ breakInside: 'avoid', marginBottom: '24px', borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)' }}>
+                 <div key={stall.id} style={{ borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)' }}>
                     <img
                       src={getImageUrl(stall.id)}
                       alt={stall.name}
