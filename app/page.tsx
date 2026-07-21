@@ -661,7 +661,7 @@ export default function Home() {
 
             <div className="reveal-up delay-1" style={{ marginTop: '60px', display: 'flex', justifyContent: 'center' }}>
               <div style={{ padding: '24px 60px', background: 'linear-gradient(135deg, rgba(226, 192, 68, 0.15) 0%, rgba(226, 192, 68, 0.05) 100%)', borderRadius: '50px', border: '1px solid rgba(226, 192, 68, 0.3)', backdropFilter: 'blur(10px)', boxShadow: '0 8px 32px rgba(0, 0, 0, 0.3)', textAlign: 'center' }}>
-                <p className="font-heading" style={{ color: 'var(--color-gold)', fontSize: 'clamp(1.5rem, 4vw, 2.2rem)', fontStyle: 'italic', margin: 0, letterSpacing: '2px', fontWeight: 'bold' }}>
+                <p className="font-heading" style={{ color: '#FFD700', textShadow: '0 0 15px rgba(255, 215, 0, 0.6), 0 0 30px rgba(255, 215, 0, 0.3)', fontSize: 'clamp(1.5rem, 4vw, 2.2rem)', fontStyle: 'italic', margin: 0, letterSpacing: '2px', fontWeight: 'bold' }}>
                   "Kepuasan Anda Adalah Prioritas Kami"
                 </p>
               </div>
