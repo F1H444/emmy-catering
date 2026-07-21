@@ -54,7 +54,9 @@ export async function GET(request: Request) {
       },
       testimoni: testis.filter((f: any) => f.mimeType.startsWith('image/')),
       paket: paket.filter((f: any) => f.mimeType.startsWith('image/')),
-      foodstall: foodstall.filter((f: any) => f.mimeType.startsWith('image/'))
+      foodstall: foodstall
+        .filter((f: any) => f.mimeType.startsWith('image/'))
+        .sort((a: any, b: any) => a.name.localeCompare(b.name, undefined, { numeric: true }))
     };
 
     return NextResponse.json(responseData);
