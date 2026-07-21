@@ -658,6 +658,14 @@ export default function Home() {
                 ></iframe>
               </div>
             </div>
+
+            <div className="reveal-up delay-1" style={{ marginTop: '60px', display: 'flex', justifyContent: 'center' }}>
+              <div style={{ padding: '24px 60px', background: 'linear-gradient(135deg, rgba(226, 192, 68, 0.15) 0%, rgba(226, 192, 68, 0.05) 100%)', borderRadius: '50px', border: '1px solid rgba(226, 192, 68, 0.3)', backdropFilter: 'blur(10px)', boxShadow: '0 8px 32px rgba(0, 0, 0, 0.3)', textAlign: 'center' }}>
+                <p className="font-heading" style={{ color: 'var(--color-gold)', fontSize: 'clamp(1.5rem, 4vw, 2.2rem)', fontStyle: 'italic', margin: 0, letterSpacing: '2px', fontWeight: 'bold' }}>
+                  "Kepuasan Anda Adalah Prioritas Kami"
+                </p>
+              </div>
+            </div>
           </div>
         </section>
       </main>
@@ -725,12 +733,7 @@ export default function Home() {
 
           </div>
 
-          <div style={{ textAlign: 'center', color: 'var(--color-text-muted)', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '40px', paddingBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '24px' }}>
-             <div className="reveal-up" style={{ padding: '16px 40px', background: 'linear-gradient(135deg, rgba(226, 192, 68, 0.15) 0%, rgba(226, 192, 68, 0.05) 100%)', borderRadius: '50px', border: '1px solid rgba(226, 192, 68, 0.3)', backdropFilter: 'blur(10px)', boxShadow: '0 8px 32px rgba(0, 0, 0, 0.3)' }}>
-               <p className="font-heading" style={{ color: 'var(--color-gold)', fontSize: 'clamp(1.2rem, 3vw, 1.8rem)', fontStyle: 'italic', margin: 0, letterSpacing: '1px', fontWeight: '500' }}>
-                 "Kepuasan Anda Adalah Prioritas Kami"
-               </p>
-             </div>
+          <div style={{ textAlign: 'center', color: 'var(--color-text-muted)', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '32px' }}>
              <p className="font-body">&copy; {new Date().getFullYear()} Emmy Catering. Hak Cipta Dilindungi.</p>
           </div>
         </div>
