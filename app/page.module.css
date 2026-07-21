@@ -373,6 +373,8 @@
 }
 
 @media (max-width: 768px) {
+  .heroSubtitle { font-size: 0.9rem; letter-spacing: 3px; margin-bottom: 16px; }
+  .heroDesc { font-size: 1rem; margin-bottom: 24px; line-height: 1.6; }
   .heroButtons { flex-direction: column; }
   .heroButtons a { width: 100%; text-align: center; justify-content: center; }
   .testiItem { min-width: 280px; }

@@ -237,6 +237,7 @@ button {
 }
 
 @media (max-width: 768px) {
+  .text-giant { font-size: clamp(1.8rem, 8vw, 2.5rem); }
   .bento-grid {
     grid-template-columns: 1fr !important;
   }
