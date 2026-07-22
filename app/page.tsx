@@ -659,7 +659,45 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="reveal-up delay-1" style={{ marginTop: '60px', display: 'flex', justifyContent: 'center' }}>
+            {/* Peraturan Pemesanan */}
+            <div className="reveal-up" style={{ marginTop: '60px', marginBottom: '40px', background: 'linear-gradient(135deg, rgba(226, 192, 68, 0.15) 0%, rgba(226, 192, 68, 0.05) 100%)', border: '1px solid rgba(226, 192, 68, 0.5)', borderRadius: '32px', padding: '40px', position: 'relative', overflow: 'hidden', backdropFilter: 'blur(10px)', boxShadow: '0 15px 40px rgba(226, 192, 68, 0.2)' }}>
+              
+              <h3 className="font-heading" style={{ color: '#FFD700', textShadow: '0 0 15px rgba(255, 215, 0, 0.6), 0 0 30px rgba(255, 215, 0, 0.3)', fontSize: 'clamp(2rem, 5vw, 2.5rem)', textAlign: 'center', marginBottom: '40px', letterSpacing: '2px', textTransform: 'uppercase', fontWeight: 'bold' }}>
+                Peraturan Pemesanan
+              </h3>
+              
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px', alignItems: 'start' }}>
+                <ul className="font-body" style={{ listStyleType: 'none', color: '#fff', padding: 0, display: 'flex', flexDirection: 'column', gap: '16px', fontSize: '1.15rem', margin: 0 }}>
+                  <li style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
+                    <span style={{ color: 'var(--color-gold)', fontSize: '1.5rem', lineHeight: '1' }}>•</span>
+                    <span>Pemesanan dilakukan sedini mungkin dan harus di sertai DP (Down Payment)</span>
+                  </li>
+                  <li style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
+                    <span style={{ color: 'var(--color-gold)', fontSize: '1.5rem', lineHeight: '1' }}>•</span>
+                    <span>Harga mengikat apabila sudah terjadi kontrak DP</span>
+                  </li>
+                  <li style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
+                    <span style={{ color: 'var(--color-gold)', fontSize: '1.5rem', lineHeight: '1' }}>•</span>
+                    <span>DP pertama 20% satu bulan sebelum DP ke 2, 50%</span>
+                  </li>
+                </ul>
+                <ul className="font-body" style={{ listStyleType: 'none', color: '#fff', padding: 0, display: 'flex', flexDirection: 'column', gap: '16px', fontSize: '1.15rem', margin: 0 }}>
+                  <li style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
+                    <span style={{ color: 'var(--color-gold)', fontSize: '1.5rem', lineHeight: '1' }}>•</span>
+                    <span>Kurang dari 1000 di kenakan biaya dekorasi catering dan setting meja harga di sesuaikan dengan venue</span>
+                  </li>
+                  <li style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
+                    <span style={{ color: 'var(--color-gold)', fontSize: '1.5rem', lineHeight: '1' }}>•</span>
+                    <span>Menu bisa berubah dan di sesuaikan dengan keinginan client</span>
+                  </li>
+                </ul>
+              </div>
+              <p className="font-body" style={{ textAlign: 'right', marginTop: '30px', color: 'var(--color-gold)', fontStyle: 'italic', fontSize: '1rem', fontWeight: 'bold' }}>
+                *Syarat dan Ketentuan Berlaku
+              </p>
+            </div>
+
+            <div className="reveal-up delay-1" style={{ marginTop: '40px', display: 'flex', justifyContent: 'center' }}>
               <div style={{ padding: '24px 60px', background: 'linear-gradient(135deg, rgba(226, 192, 68, 0.15) 0%, rgba(226, 192, 68, 0.05) 100%)', borderRadius: '50px', border: '1px solid rgba(226, 192, 68, 0.3)', backdropFilter: 'blur(10px)', boxShadow: '0 8px 32px rgba(0, 0, 0, 0.3)', textAlign: 'center' }}>
                 <p className="font-heading" style={{ color: '#FFD700', textShadow: '0 0 15px rgba(255, 215, 0, 0.6), 0 0 30px rgba(255, 215, 0, 0.3)', fontSize: 'clamp(1.5rem, 4vw, 2.2rem)', fontStyle: 'italic', margin: 0, letterSpacing: '2px', fontWeight: 'bold' }}>
                   "Kepuasan Anda Adalah Prioritas Kami"
@@ -726,7 +764,12 @@ export default function Home() {
               <h4 className="font-heading" style={{ color: '#fff', fontSize: '1.5rem', marginBottom: '24px', letterSpacing: '1px' }}>Info Kontak</h4>
               <ul className="font-body" style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '16px', alignItems: 'flex-start' }}>
                 <li style={{ color: 'var(--color-text)', whiteSpace: 'pre-line' }}><strong>Alamat:</strong><br/>{content.contact.address}</li>
-                <li style={{ color: 'var(--color-text)' }}><strong>Telepon:</strong><br/>+{content.contact.whatsapp[0]} (Admin 1)</li>
+                <li style={{ color: 'var(--color-text)' }}>
+                  <strong>Telepon:</strong><br/>
+                  {content.contact.whatsapp.map((wa, idx) => (
+                    <span key={idx} style={{ display: 'block' }}>+{wa} (Admin {idx + 1})</span>
+                  ))}
+                </li>
                 <li style={{ color: 'var(--color-text)' }}><strong>Jam Buka:</strong><br/>{content.contact.hours}</li>
               </ul>
             </div>
