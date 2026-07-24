@@ -9,7 +9,7 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
 import content from "../data/content.json";
-import styles from "./page.module.css";
+
 import KineticText from "./components/KineticText";
 import MagneticButton from "./components/MagneticButton";
 

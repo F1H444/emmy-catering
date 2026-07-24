@@ -101,18 +101,7 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  icons: {
-    icon: [
-      { url: "/icon.jpg", type: "image/jpeg" },
-    ],
-    shortcut: "/icon.jpg",
-    apple: [
-      { url: "/icon.jpg", type: "image/jpeg" },
-    ],
-    other: [
-      { rel: "apple-touch-icon", url: "/icon.jpg" },
-    ],
-  },
+
   verification: {
     google: "google9b13fbf594574a4f",
   },
