@@ -184,11 +184,11 @@ export default function Home() {
                 <KineticText text={content.hero.title} as="h1" className="text-giant font-heading" delayOffset={0.2} />
               </div>
               
-              <p className={`${styles.heroDescription} font-body reveal-up delay-2`}>
+              <p className={`${styles.heroDesc} font-body reveal-up delay-2`}>
                 {content.hero.description}
               </p>
               
-              <div className={`${styles.ctaGroup} reveal-up delay-3`}>
+              <div className={`${styles.heroButtons} reveal-up delay-3`}>
                 <MagneticButton as="a" href="#menu" className="btn-primary font-body">Lihat Pilihan Menu</MagneticButton>
                 <MagneticButton as="a" href="/contact" className="btn-secondary font-body">Tanya-Tanya Dulu via WA</MagneticButton>
               </div>
