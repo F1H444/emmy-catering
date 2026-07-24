@@ -1,6 +1,6 @@
 import Link from "next/link";
 import content from "../../data/content.json";
-
+import styles from "../page.module.css";
 
 export default function Contact() {
   return (
