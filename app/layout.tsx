@@ -14,52 +14,28 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Emmy Catering Sukabumi | Catering Pernikahan Terbaik & Terpercaya Sejak 2000",
-    template: "%s | Emmy Catering Sukabumi",
+    default: "GREENLeaf Catering & Dekor | Spesialis Catering Salatiga",
+    template: "%s | GREENLeaf Catering & Dekor",
   },
   description:
-    "Emmy Catering Sukabumi ★ Catering pernikahan, ulang tahun, arisan & korporat. Berpengalaman sejak 2000, 1000+ acara sukses. Harga mulai Rp 40.000/pax. Menu lezat, higienis, tepat waktu. ☎ +6281548884171",
+    "GREENLeaf Catering & Dekor ★ Menyediakan berbagai kebutuhan konsumsi acara Anda: Aneka Paket Nasi, Snack Dus, Prasmanan, Tumpeng, dan Hantaran. Menu menyesuaikan permintaan dan budget. ☎ +6281575757048",
   keywords: [
-    // Primary keywords
-    "catering sukabumi",
-    "emmy catering sukabumi",
-    "emmy catering",
-    "jasa catering sukabumi",
-    "catering terbaik sukabumi",
-    // Event-based keywords
-    "catering pernikahan sukabumi",
-    "catering resepsi pernikahan sukabumi",
-    "catering pernikahan murah sukabumi",
-    "catering ulang tahun sukabumi",
-    "catering arisan sukabumi",
-    "catering korporat sukabumi",
-    "catering seminar sukabumi",
-    "catering acara sukabumi",
-    // Price-based keywords
-    "catering murah sukabumi",
-    "catering murah meriah sukabumi",
-    "paket catering sukabumi",
-    "harga catering sukabumi",
-    "catering 40 ribu sukabumi",
-    // Location keywords
-    "catering sukabumi kota",
-    "catering sukabumi kabupaten",
-    "catering jawa barat",
-    "catering profesional sukabumi",
-    // Long-tail keywords
-    "rekomendasi catering sukabumi",
-    "catering enak sukabumi",
-    "catering higienis sukabumi",
-    "catering halal sukabumi",
-    "catering 500 orang sukabumi",
-    "catering 1000 orang sukabumi",
-    "vendor catering sukabumi",
-    "catering berpengalaman sukabumi",
+    "catering salatiga",
+    "greenleaf catering",
+    "greenleaf catering salatiga",
+    "jasa catering salatiga",
+    "catering terbaik salatiga",
+    "nasi box santap salatiga",
+    "paket nasi salatiga",
+    "snack dus salatiga",
+    "prasmanan salatiga",
+    "tumpeng salatiga",
+    "hantaran pernikahan salatiga"
   ],
-  authors: [{ name: "Emmy Catering Sukabumi", url: "https://emmy-catering.vercel.app" }],
-  creator: "Emmy Catering Sukabumi",
-  publisher: "Emmy Catering Sukabumi",
-  metadataBase: new URL("https://emmy-catering.vercel.app"),
+  authors: [{ name: "GREENLeaf Catering & Dekor", url: "https://desty.page/greenleaf_catering_salatiga" }],
+  creator: "GREENLeaf Catering & Dekor",
+  publisher: "GREENLeaf Catering & Dekor",
+  metadataBase: new URL("https://desty.page/greenleaf_catering_salatiga"),
   alternates: {
     canonical: "/",
   },
@@ -71,26 +47,26 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "id_ID",
-    url: "https://emmy-catering.vercel.app",
-    siteName: "Emmy Catering Sukabumi",
-    title: "Emmy Catering Sukabumi | Catering Pernikahan Terbaik Sejak 2000",
+    url: "https://desty.page/greenleaf_catering_salatiga",
+    siteName: "GREENLeaf Catering & Dekor",
+    title: "GREENLeaf Catering & Dekor | Spesialis Catering Salatiga",
     description:
-      "Catering pernikahan, ulang tahun, arisan & korporat di Sukabumi. Berpengalaman sejak 2000, 1000+ acara sukses. Harga mulai Rp 40.000/pax. Hubungi kami sekarang!",
+      "Menyediakan berbagai kebutuhan konsumsi acara Anda di Salatiga. Menu menyesuaikan permintaan dan budget.",
     images: [
       {
         url: "/logo_emmy.jpg",
         width: 1200,
         height: 630,
-        alt: "Emmy Catering Sukabumi - Jasa Catering Pernikahan Terbaik",
+        alt: "GREENLeaf Catering & Dekor",
         type: "image/jpeg",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Emmy Catering Sukabumi | Catering Terbaik & Terpercaya",
+    title: "GREENLeaf Catering & Dekor | Spesialis Catering Salatiga",
     description:
-      "Catering pernikahan, ulang tahun & korporat di Sukabumi. Sejak 2000, 1000+ acara sukses. Harga mulai Rp 40.000/pax.",
+      "Menyediakan berbagai kebutuhan konsumsi acara Anda di Salatiga. Menu menyesuaikan permintaan dan budget.",
     images: ["/logo_emmy.jpg"],
   },
   robots: {
@@ -106,7 +82,6 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-
   verification: {
     google: "google9b13fbf594574a4f",
   },
@@ -130,44 +105,41 @@ export default function RootLayout({
     "@graph": [
       {
         "@type": ["FoodEstablishment", "LocalBusiness", "CateringService"],
-        "@id": "https://emmy-catering.vercel.app/#business",
-        "name": "Emmy Catering Sukabumi",
-        "alternateName": ["Emmy Catering", "Emmy Catering", "Catering Emmy Sukabumi"],
-        "description": "Emmy Catering Sukabumi adalah jasa catering profesional terpercaya untuk pernikahan, resepsi, ulang tahun, arisan, dan acara korporat di Sukabumi sejak tahun 2000. Lebih dari 1000 acara sukses dilayani dengan menu lezat dan higienis.",
-        "url": "https://emmy-catering.vercel.app",
+        "@id": "https://desty.page/greenleaf_catering_salatiga#business",
+        "name": "GREENLeaf Catering & Dekor",
+        "alternateName": ["Greenleaf Catering", "Nasi Box Santap"],
+        "description": "GREENLeaf Catering & Dekor menyediakan berbagai kebutuhan konsumsi acara anda di Salatiga. Menu bisa menyesuaikan permintaan dan budget.",
+        "url": "https://desty.page/greenleaf_catering_salatiga",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://emmy-catering.vercel.app/logo_emmy.jpg",
+          "url": "https://desty.page/greenleaf_catering_salatiga/logo.jpg",
           "width": 1080,
           "height": 1080
         },
         "image": [
-          "https://emmy-catering.vercel.app/logo_emmy.jpg",
-          "https://emmy-catering.vercel.app/emmy_team.jpg"
+          "https://desty.page/greenleaf_catering_salatiga/logo.jpg"
         ],
-        "telephone": "+6281548884171",
-        "priceRange": "Rp 40.000 - Rp 60.000",
+        "telephone": "+6281575757048",
+        "priceRange": "$$",
         "currenciesAccepted": "IDR",
         "paymentAccepted": "Cash, Transfer Bank",
-        "servesCuisine": ["Indonesian", "Masakan Indonesia", "Masakan Sunda"],
-        "foundingDate": "2000",
-        "numberOfEmployees": { "@type": "QuantitativeValue", "value": 20 },
+        "servesCuisine": ["Indonesian", "Masakan Indonesia"],
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "Sukabumi",
-          "addressLocality": "Sukabumi",
-          "addressRegion": "Jawa Barat",
-          "postalCode": "43100",
+          "streetAddress": "Jln.Amarta RT04/01 Randuares Kumpulrejo",
+          "addressLocality": "Salatiga",
+          "addressRegion": "Jawa Tengah",
+          "postalCode": "50734",
           "addressCountry": "ID"
         },
         "geo": {
           "@type": "GeoCoordinates",
-          "latitude": -6.9147,
-          "longitude": 106.9305
+          "latitude": -7.3305,
+          "longitude": 110.5084
         },
         "areaServed": [
-          { "@type": "City", "name": "Sukabumi" },
-          { "@type": "AdministrativeArea", "name": "Jawa Barat" }
+          { "@type": "City", "name": "Salatiga" },
+          { "@type": "AdministrativeArea", "name": "Jawa Tengah" }
         ],
         "openingHoursSpecification": [
           {
@@ -177,128 +149,20 @@ export default function RootLayout({
             "closes": "21:00"
           }
         ],
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Paket Catering Emmy",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "name": "Paket Silver",
-              "description": "Paket catering hemat untuk acara kecil",
-              "price": "40000",
-              "priceCurrency": "IDR",
-              "unitText": "per orang"
-            },
-            {
-              "@type": "Offer",
-              "name": "Paket Gold",
-              "description": "Paket catering menengah dengan variasi menu lebih banyak",
-              "price": "45000",
-              "priceCurrency": "IDR",
-              "unitText": "per orang"
-            },
-            {
-              "@type": "Offer",
-              "name": "Paket Super Diamond",
-              "description": "Paket catering premium dengan menu lengkap",
-              "price": "60000",
-              "priceCurrency": "IDR",
-              "unitText": "per orang"
-            }
-          ]
-        },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "reviewCount": "127",
-          "bestRating": "5",
-          "worstRating": "1"
-        },
-        "review": [
-          {
-            "@type": "Review",
-            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-            "author": { "@type": "Person", "name": "Siti Rahayu" },
-            "reviewBody": "Emmy Catering Sukabumi sangat profesional! Makanannya enak, tepat waktu, dan pelayanannya ramah. Sangat rekomen untuk pernikahan di Sukabumi!"
-          },
-          {
-            "@type": "Review",
-            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-            "author": { "@type": "Person", "name": "Budi Santoso" },
-            "reviewBody": "Harga terjangkau, rasa makanan lezat. Sudah dua kali pakai Emmy Catering dan selalu puas!"
-          }
-        ],
         "sameAs": [
-          "https://www.instagram.com/emmycatering",
-          "https://www.tiktok.com/@emmy.catering3"
+          "https://wa.me/c/6281575757048",
+          "https://www.tiktok.com/@nasiboxsantap?_t=8pKQfhnfIjn&_r=1",
+          "https://desty.page/greenleaf_catering_salatiga"
         ]
       },
       {
         "@type": "WebSite",
-        "@id": "https://emmy-catering.vercel.app/#website",
-        "url": "https://emmy-catering.vercel.app",
-        "name": "Emmy Catering Sukabumi",
-        "description": "Emmy Catering Sukabumi — catering pernikahan terbaik dan terpercaya sejak 2000",
-        "publisher": { "@id": "https://emmy-catering.vercel.app/#business" },
-        "inLanguage": "id-ID",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://emmy-catering.vercel.app/paket?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
-      },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Beranda", "item": "https://emmy-catering.vercel.app" },
-          { "@type": "ListItem", "position": 2, "name": "Paket Catering", "item": "https://emmy-catering.vercel.app/paket" },
-          { "@type": "ListItem", "position": 3, "name": "Kontak", "item": "https://emmy-catering.vercel.app/contact" }
-        ]
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Berapa harga paket catering Emmy Catering Sukabumi?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Harga paket catering Emmy Catering mulai dari Rp 40.000 per orang untuk paket Silver hingga Rp 60.000 untuk paket Super Diamond. Semua paket sudah termasuk nasi, lauk pauk, sayur, dan minuman. Hubungi kami via WhatsApp +6281548884171 untuk penawaran terbaik."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Apakah Emmy Catering melayani catering pernikahan di Sukabumi?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Ya! Emmy Catering Sukabumi melayani berbagai acara termasuk pernikahan, resepsi, ulang tahun, arisan, syukuran, hingga acara korporat dan seminar. Kami juga melayani pengiriman ke seluruh wilayah Sukabumi Kota dan Kabupaten."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Sudah berapa lama Emmy Catering beroperasi di Sukabumi?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Emmy Catering telah berpengalaman lebih dari 24 tahun sejak tahun 2000, melayani lebih dari 1000 acara sukses di Sukabumi dan sekitarnya dengan kepuasan pelanggan tertinggi."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Apakah Emmy Catering menyediakan catering dengan kapasitas besar?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Ya, Emmy Catering Sukabumi mampu melayani acara dari 50 hingga 2000+ tamu. Kami berpengalaman menangani acara besar seperti resepsi pernikahan, gathering perusahaan, dan acara pemerintahan."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Bagaimana cara memesan catering Emmy Catering Sukabumi?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Pemesanan catering Emmy Catering Sukabumi bisa dilakukan via WhatsApp di +6281548884171, jam 08.00-21.00 WIB setiap hari. Kami akan memberikan konsultasi gratis dan penawaran harga terbaik sesuai kebutuhan acara Anda."
-            }
-          }
-        ]
+        "@id": "https://desty.page/greenleaf_catering_salatiga#website",
+        "url": "https://desty.page/greenleaf_catering_salatiga",
+        "name": "GREENLeaf Catering & Dekor",
+        "description": "Spesialis Catering Salatiga & Sekitarnya",
+        "publisher": { "@id": "https://desty.page/greenleaf_catering_salatiga#business" },
+        "inLanguage": "id-ID"
       }
     ]
   };

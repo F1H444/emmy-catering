@@ -42,11 +42,26 @@ export default function Home() {
           
           // Update Paket
           if (data.paket && data.paket.length > 0) {
-            const newMenu = content.menu.categories.map(cat => {
-              const file = data.paket.find((f: any) => 
-                f.name.toLowerCase().replace(/[-_ ]/g, '').startsWith(cat.id.toLowerCase().replace(/[-_ ]/g, ''))
-              );
-              return file ? { ...cat, drive_id: file.id } : cat;
+            const newMenu = data.paket.map((file: any) => {
+               const nameLower = file.name.toLowerCase();
+               const existing = content.menu.categories.find(cat => 
+                  nameLower.includes(cat.id.toLowerCase()) || nameLower.includes(cat.name.toLowerCase())
+               );
+               
+               if (existing) {
+                  return { ...existing, drive_id: file.id };
+               } else {
+                  const nameWithoutExt = file.name.replace(/\.[^/.]+$/, "");
+                  const parts = nameWithoutExt.split(/[-|_]/).map((s: string) => s.trim());
+                  return {
+                     id: file.id,
+                     name: parts[0] || nameWithoutExt,
+                     price: parts.length > 1 ? parts[1] : "",
+                     description: parts.length > 2 ? parts.slice(2).join(" ") : "",
+                     drive_id: file.id,
+                     image_url: ""
+                  };
+               }
             });
             setDynamicMenu(newMenu);
           }
@@ -382,20 +397,22 @@ export default function Home() {
               {content.menu.description}
             </p>
 
-            <div className="bento-grid reveal-scale delay-1" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 350px), 1fr))', alignItems: 'start' }}>
-               {dynamicMenu.map((cat, idx) => (
-                  <div key={idx} className="bento-item" style={{ display: 'flex', flexDirection: 'column', gap: '20px', alignItems: 'center', textAlign: 'center' }}>
+            <div className="bento-grid reveal-scale delay-1" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', alignItems: 'start' }}>
+               {dynamicMenu.map((cat: any, idx: number) => (
+                  <div key={idx} className="bento-item" style={{ display: 'flex', flexDirection: 'column', gap: '12px', alignItems: 'center', textAlign: 'center', padding: '24px' }}>
                      <div style={{ position: 'relative', width: '100%' }}>
                         {cat.drive_id && cat.drive_id.length > 5 ? (
-                          <Image src={getImageUrl(cat.drive_id, cat.image_url)} alt={cat.name} width={500} height={700} style={{ width: '100%', height: 'auto', borderRadius: '16px' }} loading="lazy" sizes="(max-width: 768px) 100vw, 350px" />
+                          <Image src={getImageUrl(cat.drive_id, cat.image_url)} alt={cat.name} width={400} height={400} style={{ width: '100%', height: 'auto', borderRadius: '16px', aspectRatio: '1/1', objectFit: 'cover' }} loading="lazy" sizes="(max-width: 768px) 100vw, 300px" />
                         ) : (
-                          <div style={{ width: '100%', aspectRatio: '5/7', backgroundColor: '#1a1a1a', borderRadius: '16px' }} />
+                          <div style={{ width: '100%', aspectRatio: '1/1', backgroundColor: 'var(--color-black-light)', borderRadius: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                            <span style={{color: 'var(--color-text-muted)'}}>Tidak ada gambar</span>
+                          </div>
                         )}
                      </div>
-                     <h3 className="font-heading" style={{ fontSize: '1.8rem', color: 'var(--color-gold)', marginBottom: '8px' }}>{cat.name}</h3>
-                     <Link href={`/paket?paket=${cat.id}`} className="font-body" style={{ color: 'var(--color-gold)', fontWeight: 'bold', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                        Lihat Paket <span>&rarr;</span>
-                     </Link>
+                     <h3 className="font-heading" style={{ fontSize: '1.4rem', color: 'var(--color-gold)', marginBottom: '0' }}>{cat.name}</h3>
+                     {cat.price && <div className="font-body" style={{ fontSize: '1.2rem', fontWeight: 'bold', color: 'var(--color-white)' }}>{cat.price}</div>}
+                     {cat.description && <p className="font-body" style={{ color: 'var(--color-text-muted)', fontSize: '0.95rem', lineHeight: '1.4' }}>{cat.description}</p>}
+                     <a href={`https://wa.me/6281575757048?text=Halo%20saya%20mau%20pesan%20${encodeURIComponent(cat.name)}`} target="_blank" rel="noopener noreferrer" className="btn-primary font-body" style={{ marginTop: 'auto', width: '100%', padding: '12px', fontSize: '1rem', borderRadius: '12px' }}>Pesan Sekarang</a>
                   </div>
                ))}
             </div>

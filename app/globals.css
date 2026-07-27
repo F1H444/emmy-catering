@@ -1,13 +1,13 @@
 :root {
-  --color-black: #030303;
-  --color-black-light: #0d0d0d;
-  --color-black-transparent: rgba(3, 3, 3, 0.85);
-  --color-gold: #e2c044;
-  --color-gold-light: #f7e8a4;
-  --color-gold-dark: #b8972e;
+  --color-black: #01321c;
+  --color-black-light: #024b2a;
+  --color-black-transparent: rgba(1, 50, 28, 0.85);
+  --color-gold: #95c11f;
+  --color-gold-light: #b0d745;
+  --color-gold-dark: #769b16;
   --color-white: #f5f5f5;
-  --color-text: #cccccc;
-  --color-text-muted: #888888;
+  --color-text: #e0eee4;
+  --color-text-muted: #8caf96;
   
 }
 
@@ -82,7 +82,7 @@ button {
 
 .text-outline {
   color: transparent;
-  -webkit-text-stroke: 1.5px rgba(226, 192, 68, 0.3);
+  -webkit-text-stroke: 1.5px rgba(149, 193, 31, 0.3);
   text-transform: uppercase;
 }
 
@@ -127,10 +127,10 @@ button {
 
 /* Glassmorphism Utilities */
 .glass {
-  background: rgba(13, 13, 13, 0.4);
+  background: rgba(2, 75, 42, 0.4);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(226, 192, 68, 0.1);
+  border: 1px solid rgba(149, 193, 31, 0.1);
 }
 
 /* Bento Box Grids */
@@ -152,7 +152,7 @@ button {
 }
 
 .bento-item:hover {
-  border-color: rgba(226, 192, 68, 0.3);
+  border-color: rgba(149, 193, 31, 0.3);
   transform: translateY(-5px);
 }
 
