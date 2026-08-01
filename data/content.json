@@ -1,15 +1,15 @@
 {
   "hero": {
-    "title": "Spesialis Catering Salatiga & Sekitarnya",
-    "subtitle": "SUGENG RAWUH",
-    "description": "GREENLeaf Catering & Dekor menyediakan berbagai kebutuhan konsumsi acara anda. Menu bisa menyesuaikan permintaan dan budget.",
-    "established": 2024,
+    "title": "Spesialis Catering Sukabumi & Sekitarnya",
+    "subtitle": "Catering Sukabumi Terbaik untuk Hari Bahagiamu",
+    "description": "Bikin acaramu makin berkesan dengan sajian istimewa dari Emmy Catering. Rasanya memuaskan, kualitas terjamin, dan pastinya bikin tamu ketagihan!",
+    "established": 2000,
     "motto": "Kepuasan Anda adalah Prioritas Kami."
   },
   "about": {
-    "title": "Tentang GREENLeaf",
-    "subtitle": "Catering & Dekorasi Terbaik di Salatiga",
-    "description": "GREENLeaf Catering menyediakan berbagai kebutuhan konsumsi acara anda mulai dari Aneka Paket Nasi, Snack Dus, Racikan/Piring terbang, Prasmanan, Tumpeng, Aneka Stall, hingga Hantaran Pernikahan.",
+    "title": "Kenalan Yuk!",
+    "subtitle": "Catering Enak di Sukabumi, Disajikan Sepenuh Hati",
+    "description": "Emmy Catering Sukabumi menyediakan berbagai kebutuhan konsumsi acara anda mulai dari paket nasi, snack, prasmanan, tumpeng, hingga hantaran pernikahan.",
     "stats": [
       { "value": "100+", "label": "Menu Pilihan" },
       { "value": "100%", "label": "Halal" },
@@ -21,7 +21,7 @@
     "subtitle": "Komitmen Kami untuk Anda",
     "visi": {
       "title": "Visi Kami",
-      "description": "Menjadi layanan catering terdepan dan terpercaya di Kota Salatiga."
+      "description": "Menjadi layanan catering terdepan dan terpercaya di Kota Sukabumi serta wilayah sekitarnya, yang dikenal karena cita rasa masakan yang istimewa, pelayanan sepenuh hati, dan konsistensi kualitas dalam setiap hidangan yang disajikan."
     },
     "misi": {
       "title": "Misi Kami",
@@ -273,7 +273,7 @@
       },
       {
         "id": "paket-greenleaf",
-        "name": "PAKET GREENLeaf",
+        "name": "PAKET EMMY",
         "price": "Rp 35.000",
         "description": "Menu bisa menyesuikan keinginan dan kebutuhan",
         "image_url": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&q=80",
@@ -353,7 +353,7 @@
     "items": [
       {
         "id": 1,
-        "name": "Klien Greenleaf",
+        "name": "Klien Emmy Catering",
         "event": "Resepsi",
         "text": "Makanannya enak, penyajian rapi, dan sesuai dengan budget yang kami minta.",
         "drive_id": ""
@@ -362,7 +362,7 @@
   },
   "documentation": {
     "title": "Galeri Kami",
-    "subtitle": "Momen Bersama GREENLeaf",
+    "subtitle": "Momen Bahagia Bersama Emmy Catering",
     "description": "Keseruan di setiap acara yang kami tangani.",
     "photo_folder_id": "",
     "video_folder_id": "",
@@ -373,12 +373,12 @@
     "videos": []
   },
   "contact": {
-    "whatsapp": ["081575757048"],
-    "instagram": "https://desty.page/greenleaf_catering_salatiga",
-    "tiktok": "https://www.tiktok.com/@nasiboxsantap?_t=8pKQfhnfIjn&_r=1",
-    "facebook": "",
-    "address": "Jln. Amarta RT04/01 Randuares Kumpulrejo, Kec. Argomulyo, Kota Salatiga, Jawa Tengah 50734",
-    "hours": "Sesuai Pesanan"
+    "whatsapp": ["081546884171", "081563480787", "08158889020"],
+    "instagram": "https://www.instagram.com/emmycatering",
+    "tiktok": "https://www.tiktok.com/@emmy.catering3",
+    "facebook": "https://www.facebook.com/emmy.rachmawaty.14",
+    "address": "Jl. Ar. Hakim - Benteng Gg. Cemara No. 17 (belakang Benglap)\nKota Sukabumi",
+    "hours": "Setiap Hari · Buka jam 08.00 - 16.00 WIB"
   },
   "brochures": [
     {
@@ -389,6 +389,8 @@
     }
   ],
   "admins": [
-    { "id": 1, "name": "Admin", "whatsapp": "6281575757048" }
+    { "id": 1, "name": "Admin 1", "whatsapp": "6281546884171" },
+    { "id": 2, "name": "Admin 2", "whatsapp": "6281563480787" },
+    { "id": 3, "name": "Admin 3", "whatsapp": "628158889020" }
   ]
 }

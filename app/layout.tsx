@@ -14,60 +14,59 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "GREENLeaf Catering & Dekor | Spesialis Catering Salatiga",
-    template: "%s | GREENLeaf Catering & Dekor",
+    default: "Emmy Catering Sukabumi | Catering Pernikahan Terbaik & Terpercaya Sejak 2000",
+    template: "%s | Emmy Catering Sukabumi",
   },
   description:
-    "GREENLeaf Catering & Dekor ★ Menyediakan berbagai kebutuhan konsumsi acara Anda: Aneka Paket Nasi, Snack Dus, Prasmanan, Tumpeng, dan Hantaran. Menu menyesuaikan permintaan dan budget. ☎ +6281575757048",
+    "Emmy Catering Sukabumi ★ Catering pernikahan, ulang tahun, arisan & korporat. Berpengalaman sejak 2000, 1000+ acara sukses. Harga mulai Rp 40.000/pax. Menu lezat, higienis, tepat waktu. ☎ +6281546884171",
   keywords: [
-    "catering salatiga",
-    "greenleaf catering",
-    "greenleaf catering salatiga",
-    "jasa catering salatiga",
-    "catering terbaik salatiga",
-    "nasi box santap salatiga",
-    "paket nasi salatiga",
-    "snack dus salatiga",
-    "prasmanan salatiga",
-    "tumpeng salatiga",
-    "hantaran pernikahan salatiga"
+    "catering sukabumi",
+    "emmy catering",
+    "emmy catering sukabumi",
+    "jasa catering sukabumi",
+    "catering pernikahan sukabumi",
+    "catering terbaik sukabumi",
+    "catering ulang tahun sukabumi",
+    "catering arisan sukabumi",
+    "catering korporat sukabumi",
+    "paket catering sukabumi",
+    "prasmanan sukabumi",
+    "tumpeng sukabumi",
+    "catering hajatan sukabumi",
+    "catering murah sukabumi",
+    "catering jawa barat"
   ],
-  authors: [{ name: "GREENLeaf Catering & Dekor", url: "https://desty.page/greenleaf_catering_salatiga" }],
-  creator: "GREENLeaf Catering & Dekor",
-  publisher: "GREENLeaf Catering & Dekor",
-  metadataBase: new URL("https://desty.page/greenleaf_catering_salatiga"),
+  authors: [{ name: "Emmy Catering", url: "https://emmy-catering.vercel.app" }],
+  creator: "Emmy Catering",
+  publisher: "Emmy Catering",
+  metadataBase: new URL("https://emmy-catering.vercel.app"),
   alternates: {
     canonical: "/",
-  },
-  icons: {
-    icon: "/icon.jpg",
-    shortcut: "/icon.jpg",
-    apple: "/icon.jpg",
   },
   openGraph: {
     type: "website",
     locale: "id_ID",
-    url: "https://desty.page/greenleaf_catering_salatiga",
-    siteName: "GREENLeaf Catering & Dekor",
-    title: "GREENLeaf Catering & Dekor | Spesialis Catering Salatiga",
+    url: "https://emmy-catering.vercel.app",
+    siteName: "Emmy Catering",
+    title: "Emmy Catering Sukabumi | Catering Pernikahan Terbaik Sejak 2000",
     description:
-      "Menyediakan berbagai kebutuhan konsumsi acara Anda di Salatiga. Menu menyesuaikan permintaan dan budget.",
+      "Emmy Catering Sukabumi ★ Catering pernikahan, ulang tahun, arisan & korporat. Berpengalaman sejak 2000, 1000+ acara sukses. Menu lezat, higienis, tepat waktu.",
     images: [
       {
-        url: "/logo_emmy.jpg",
+        url: "/og-emmy.jpg",
         width: 1200,
         height: 630,
-        alt: "GREENLeaf Catering & Dekor",
+        alt: "Emmy Catering",
         type: "image/jpeg",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "GREENLeaf Catering & Dekor | Spesialis Catering Salatiga",
+    title: "Emmy Catering Sukabumi | Catering Terbaik & Terpercaya",
     description:
-      "Menyediakan berbagai kebutuhan konsumsi acara Anda di Salatiga. Menu menyesuaikan permintaan dan budget.",
-    images: ["/logo_emmy.jpg"],
+      "Emmy Catering Sukabumi ★ Catering pernikahan, ulang tahun, arisan & korporat. Menu lezat, higienis, tepat waktu.",
+    images: ["/og-emmy.jpg"],
   },
   robots: {
     index: true,
@@ -105,63 +104,64 @@ export default function RootLayout({
     "@graph": [
       {
         "@type": ["FoodEstablishment", "LocalBusiness", "CateringService"],
-        "@id": "https://desty.page/greenleaf_catering_salatiga#business",
-        "name": "GREENLeaf Catering & Dekor",
-        "alternateName": ["Greenleaf Catering", "Nasi Box Santap"],
-        "description": "GREENLeaf Catering & Dekor menyediakan berbagai kebutuhan konsumsi acara anda di Salatiga. Menu bisa menyesuaikan permintaan dan budget.",
-        "url": "https://desty.page/greenleaf_catering_salatiga",
+        "@id": "https://emmy-catering.vercel.app#business",
+        "name": "Emmy Catering",
+        "alternateName": ["Emmy Catering Sukabumi", "Emmy Catering"],
+        "description": "Emmy Catering Sukabumi menyediakan berbagai kebutuhan konsumsi acara anda: catering pernikahan, ulang tahun, arisan & korporat. Menu bisa menyesuaikan permintaan dan budget.",
+        "url": "https://emmy-catering.vercel.app",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://desty.page/greenleaf_catering_salatiga/logo.jpg",
-          "width": 1080,
-          "height": 1080
+          "url": "https://emmy-catering.vercel.app/logo_emmy.jpg",
+          "width": 1254,
+          "height": 1254
         },
         "image": [
-          "https://desty.page/greenleaf_catering_salatiga/logo.jpg"
+          "https://emmy-catering.vercel.app/logo_emmy.jpg"
         ],
-        "telephone": "+6281575757048",
+        "telephone": "+6281546884171",
         "priceRange": "$$",
         "currenciesAccepted": "IDR",
         "paymentAccepted": "Cash, Transfer Bank",
-        "servesCuisine": ["Indonesian", "Masakan Indonesia"],
+        "servesCuisine": ["Indonesian", "Masakan Indonesia", "Catering"],
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "Jln.Amarta RT04/01 Randuares Kumpulrejo",
-          "addressLocality": "Salatiga",
-          "addressRegion": "Jawa Tengah",
-          "postalCode": "50734",
+          "streetAddress": "Jl. Ar. Hakim - Benteng Gg. Cemara No. 17 (belakang Benglap)",
+          "addressLocality": "Sukabumi",
+          "addressRegion": "Jawa Barat",
+          "postalCode": "43111",
           "addressCountry": "ID"
         },
         "geo": {
           "@type": "GeoCoordinates",
-          "latitude": -7.3305,
-          "longitude": 110.5084
+          "latitude": -6.9183,
+          "longitude": 106.9273
         },
         "areaServed": [
-          { "@type": "City", "name": "Salatiga" },
-          { "@type": "AdministrativeArea", "name": "Jawa Tengah" }
+          { "@type": "City", "name": "Sukabumi" },
+          { "@type": "AdministrativeArea", "name": "Jawa Barat" }
         ],
         "openingHoursSpecification": [
           {
             "@type": "OpeningHoursSpecification",
             "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
             "opens": "08:00",
-            "closes": "21:00"
+            "closes": "16:00"
           }
         ],
         "sameAs": [
-          "https://wa.me/c/6281575757048",
-          "https://www.tiktok.com/@nasiboxsantap?_t=8pKQfhnfIjn&_r=1",
-          "https://desty.page/greenleaf_catering_salatiga"
+          "https://wa.me/6281546884171",
+          "https://www.instagram.com/emmycatering",
+          "https://www.tiktok.com/@emmy.catering3",
+          "https://www.facebook.com/emmy.rachmawaty.14"
         ]
       },
       {
         "@type": "WebSite",
-        "@id": "https://desty.page/greenleaf_catering_salatiga#website",
-        "url": "https://desty.page/greenleaf_catering_salatiga",
-        "name": "GREENLeaf Catering & Dekor",
-        "description": "Spesialis Catering Salatiga & Sekitarnya",
-        "publisher": { "@id": "https://desty.page/greenleaf_catering_salatiga#business" },
+        "@id": "https://emmy-catering.vercel.app#website",
+        "url": "https://emmy-catering.vercel.app",
+        "name": "Emmy Catering",
+        "description": "Spesialis Catering Sukabumi & Sekitarnya",
+        "publisher": { "@id": "https://emmy-catering.vercel.app#business" },
         "inLanguage": "id-ID"
       }
     ]

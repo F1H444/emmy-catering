@@ -25,13 +25,14 @@ export default function Home() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [testiPage, setTestiPage] = useState(0);
-  const [docPage, setDocPage] = useState(0);
+  const [photoPage, setPhotoPage] = useState(0);
+  const [videoPage, setVideoPage] = useState(0);
   const [activeVideo, setActiveVideo] = useState<string | null>(null);
 
   const [dynamicMenu, setDynamicMenu] = useState(content.menu.categories);
   const [dynamicTestis, setDynamicTestis] = useState(content.testimonials.items);
   const [dynamicPhotos, setDynamicPhotos] = useState(content.documentation.photos);
-  const [dynamicVideos, setDynamicVideos] = useState(content.documentation.videos);
+  const [dynamicVideos, setDynamicVideos] = useState<any[]>(content.documentation.videos);
 
   useEffect(() => {
     const fetchDriveData = async () => {
@@ -412,7 +413,7 @@ export default function Home() {
                      <h3 className="font-heading" style={{ fontSize: '1.4rem', color: 'var(--color-gold)', marginBottom: '0' }}>{cat.name}</h3>
                      {cat.price && <div className="font-body" style={{ fontSize: '1.2rem', fontWeight: 'bold', color: 'var(--color-white)' }}>{cat.price}</div>}
                      {cat.description && <p className="font-body" style={{ color: 'var(--color-text-muted)', fontSize: '0.95rem', lineHeight: '1.4' }}>{cat.description}</p>}
-                     <a href={`https://wa.me/6281575757048?text=Halo%20saya%20mau%20pesan%20${encodeURIComponent(cat.name)}`} target="_blank" rel="noopener noreferrer" className="btn-primary font-body" style={{ marginTop: 'auto', width: '100%', padding: '12px', fontSize: '1rem', borderRadius: '12px' }}>Pesan Sekarang</a>
+                     <a href={`https://wa.me/6281546884171?text=Halo%20saya%20mau%20pesan%20${encodeURIComponent(cat.name)}`} target="_blank" rel="noopener noreferrer" className="btn-primary font-body" style={{ marginTop: 'auto', width: '100%', padding: '12px', fontSize: '1rem', borderRadius: '12px' }}>Pesan Sekarang</a>
                   </div>
                ))}
             </div>
@@ -479,7 +480,7 @@ export default function Home() {
             
             <h3 className="font-heading reveal-up" style={{ color: 'var(--color-gold)', marginBottom: '24px', fontSize: '2rem' }}>Foto</h3>
             <div className="reveal-scale delay-1" style={{ columnWidth: '250px', columnGap: '16px' }}>
-                 {dynamicPhotos.slice(docPage * 5, (docPage + 1) * 5).map((photo, index) => (
+                 {dynamicPhotos.slice(photoPage * 5, (photoPage + 1) * 5).map((photo, index) => (
                     <div 
                       key={photo.id} 
                       className="bento-item"
@@ -511,16 +512,16 @@ export default function Home() {
                  <div className={styles.pagination} style={{ width: '100%', marginTop: '24px' }}>
                    <button 
                      className={styles.pageButton} 
-                     onClick={() => setDocPage(p => Math.max(0, p - 1))}
-                     disabled={docPage === 0}
+                     onClick={() => setPhotoPage(p => Math.max(0, p - 1))}
+                     disabled={photoPage === 0}
                    >
                      &larr; Prev
                    </button>
-                   <span className={styles.pageInfo}>Halaman {docPage + 1} dari {Math.ceil(dynamicPhotos.length / 5)}</span>
+                   <span className={styles.pageInfo}>Halaman {photoPage + 1} dari {Math.ceil(dynamicPhotos.length / 5)}</span>
                    <button 
                      className={styles.pageButton} 
-                     onClick={() => setDocPage(p => Math.min(Math.ceil(dynamicPhotos.length / 5) - 1, p + 1))}
-                     disabled={docPage >= Math.ceil(dynamicPhotos.length / 5) - 1}
+                     onClick={() => setPhotoPage(p => Math.min(Math.ceil(dynamicPhotos.length / 5) - 1, p + 1))}
+                     disabled={photoPage >= Math.ceil(dynamicPhotos.length / 5) - 1}
                    >
                      Next &rarr;
                    </button>
@@ -528,48 +529,46 @@ export default function Home() {
                )}
 
             <h3 className="font-heading reveal-up" style={{ color: 'var(--color-gold)', marginBottom: '24px', fontSize: '2rem', marginTop: '60px' }}>Video</h3>
-              <div className="bento-grid reveal-scale delay-1">
-               {dynamicVideos.slice(docPage * 5, (docPage + 1) * 5).map((video, index) => (
+              <div className="bento-grid reveal-scale delay-1" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 320px), 1fr))', alignItems: 'start' }}>
+               {dynamicVideos.slice(videoPage * 5, (videoPage + 1) * 5).map((video, index) => (
                 <div key={video.id} className="bento-item" style={{ padding: 0, height: 'auto', position: 'relative', width: '100%', overflow: 'hidden', borderRadius: '12px' }}>
                    {video.drive_id && video.drive_id.length > 5 ? (
-                     <div style={{ position: 'relative', width: '100%' }}>
-                       <img 
-                         src={
-                            (video as any).thumbnail_url 
-                               ? `/api/thumbnail-proxy?url=${encodeURIComponent((video as any).thumbnail_url.replace('=s220', '=s3840'))}` 
-                               : [
-                                  "https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=1920&q=100",
-                                  "https://images.unsplash.com/photo-1628294895950-9805252327bc?auto=format&fit=crop&w=1920&q=100",
-                                  "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1920&q=100",
-                                  "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1920&q=100",
-                                  "https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?auto=format&fit=crop&w=1920&q=100"
-                                 ][index % 5]
-                         } 
-                         alt="Video Aspect Holder" 
-                         style={{ width: '100%', height: 'auto', display: 'block', opacity: activeVideo === video.id ? 0 : 0.7 }} 
-                       />
-                       
-                       {activeVideo !== video.id && (
-                         <div 
-                           onClick={() => setActiveVideo(video.id)} 
-                           style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
-                         >
-                           <div style={{ width: '60px', height: '60px', backgroundColor: 'rgba(226, 192, 68, 0.9)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 4px 15px rgba(0,0,0,0.5)' }}>
-                             <svg width="24" height="24" viewBox="0 0 24 24" fill="#000" stroke="#000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-                           </div>
-                         </div>
-                       )}
-
-                       {activeVideo === video.id && (
+                     <div style={{ position: 'relative', width: '100%', aspectRatio: '16/9', overflow: 'hidden', borderRadius: '12px', backgroundColor: '#1a1a1a' }}>
+                       {activeVideo === video.id ? (
                          <iframe 
                            src={`https://drive.google.com/file/d/${video.drive_id}/preview?autoplay=1`} 
-                           width="100%" 
-                           height="100%" 
-                           style={{ border: 'none', position: 'absolute', top: 0, left: 0, borderRadius: '12px' }} 
+                           title="Video Emmy Catering"
+                           style={{ border: 'none', position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} 
                            allowFullScreen 
-                           allow="autoplay"
+                           allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
                            loading="lazy"
                          />
+                       ) : (
+                         <>
+                           <img 
+                             src={
+                                (video as any).thumbnail_url 
+                                   ? `/api/thumbnail-proxy?url=${encodeURIComponent((video as any).thumbnail_url.replace('=s220', '=s3840'))}` 
+                                   : [
+                                      "https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=1920&q=100",
+                                      "https://images.unsplash.com/photo-1628294895950-9805252327bc?auto=format&fit=crop&w=1920&q=100",
+                                      "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1920&q=100",
+                                      "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1920&q=100",
+                                      "https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?auto=format&fit=crop&w=1920&q=100"
+                                     ][index % 5]
+                             } 
+                             alt="Video Emmy Catering" 
+                             style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block', opacity: 0.7 }} 
+                           />
+                           <div 
+                             onClick={() => setActiveVideo(video.id)} 
+                             style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+                           >
+                             <div style={{ width: '60px', height: '60px', backgroundColor: 'rgba(226, 192, 68, 0.9)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 4px 15px rgba(0,0,0,0.5)' }}>
+                               <svg width="24" height="24" viewBox="0 0 24 24" fill="#000" stroke="#000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                             </div>
+                           </div>
+                         </>
                        )}
                      </div>
                    ) : (
@@ -578,6 +577,26 @@ export default function Home() {
                 </div>
               ))}
             </div>
+
+            {Math.ceil(dynamicVideos.length / 5) > 1 && (
+              <div className={styles.pagination} style={{ width: '100%', marginTop: '24px' }}>
+                <button 
+                  className={styles.pageButton} 
+                  onClick={() => setVideoPage(p => Math.max(0, p - 1))}
+                  disabled={videoPage === 0}
+                >
+                  &larr; Prev
+                </button>
+                <span className={styles.pageInfo}>Halaman {videoPage + 1} dari {Math.ceil(dynamicVideos.length / 5)}</span>
+                <button 
+                  className={styles.pageButton} 
+                  onClick={() => setVideoPage(p => Math.min(Math.ceil(dynamicVideos.length / 5) - 1, p + 1))}
+                  disabled={videoPage >= Math.ceil(dynamicVideos.length / 5) - 1}
+                >
+                  Next &rarr;
+                </button>
+              </div>
+            )}
           </div>
         </section>
 
