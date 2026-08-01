@@ -9,11 +9,11 @@
   "about": {
     "title": "Kenalan Yuk!",
     "subtitle": "Catering Enak di Sukabumi, Disajikan Sepenuh Hati",
-    "description": "Emmy Catering Sukabumi menyediakan berbagai kebutuhan konsumsi acara anda mulai dari paket nasi, snack, prasmanan, tumpeng, hingga hantaran pernikahan.",
+    "description": "Di Emmy Catering, kami percaya bahwa makanan enak bisa bikin suasana acara jadi lebih hangat dan bahagia. Itulah kenapa kami selalu totalitas meracik bumbu andalan kami sejak tahun 2000.\n\nDari dapur kami di Kota Sukabumi, kami siap nemenin momen pentingmu—mulai dari kumpul keluarga, resepsi pernikahan impian, hingga acara korporat. Food for us comes from our relatives, whether they have wings or fins or roots. That is how we consider food. Food has a culture. It has a history. It has a story. It has relationships.",
     "stats": [
-      { "value": "100+", "label": "Menu Pilihan" },
-      { "value": "100%", "label": "Halal" },
-      { "value": "24/7", "label": "Pelayanan" }
+      { "value": "1000+", "label": "Acara Sukses" },
+      { "value": "24+", "label": "Tahun Pengalaman" },
+      { "value": "50+", "label": "Pilihan Menu" }
     ]
   },
   "visiMisi": {
@@ -29,333 +29,133 @@
         {
           "icon": "quality",
           "title": "Kualitas Terjamin",
-          "description": "Menggunakan bahan baku segar dan berkualitas tinggi."
+          "description": "Menggunakan bahan baku segar dan berkualitas tinggi serta teknik memasak terbaik untuk menghadirkan hidangan yang lezat, higienis, dan memuaskan di setiap acara."
         },
         {
           "icon": "service",
           "title": "Pelayanan Sepenuh Hati",
-          "description": "Menu bisa menyesuaikan permintaan dan budget."
+          "description": "Memberikan pelayanan yang ramah, profesional, dan tepat waktu sehingga setiap pelanggan merasa dihargai dan acara mereka berjalan lancar tanpa hambatan."
         },
         {
           "icon": "innovation",
-          "title": "Berbagai Kebutuhan",
-          "description": "Menyediakan Aneka Paket Nasi, Snack Dus, Prasmanan, hingga Tumpeng."
+          "title": "Inovasi Menu Berkelanjutan",
+          "description": "Terus berinovasi dalam menciptakan variasi menu yang kreatif dan mengikuti tren kuliner, tanpa meninggalkan cita rasa tradisional Nusantara yang menjadi identitas kami."
         },
         {
           "icon": "community",
           "title": "Membangun Kepercayaan",
-          "description": "Membangun hubungan jangka panjang dengan pelanggan."
+          "description": "Membangun hubungan jangka panjang dengan pelanggan melalui transparansi harga, komunikasi yang baik, dan komitmen untuk selalu memberikan yang terbaik di setiap kesempatan."
         }
       ]
     }
   },
   "features": {
-    "title": "Layanan Kami",
-    "subtitle": "Kebutuhan Konsumsi Acara Anda",
-    "description": "Kami menyediakan berbagai pilihan untuk setiap acara penting Anda.",
+    "title": "Kenapa Pilih Kami?",
+    "subtitle": "Bikin Acaramu Makin Tenang",
+    "description": "Fokus aja ke acaramu, urusan perut tamu biar kami yang tangani. Kami siap kasih yang terbaik biar kamu makin tenang!",
     "items": [
       {
-        "title": "Aneka Paket Nasi",
-        "description": "Nasi box / nasi kotak lezat untuk berbagai acara."
+        "title": "Bahan Berkualitas",
+        "description": "Kami selalu menjaga kualitas bahan baku untuk menghasilkan rasa masakan terbaik."
       },
       {
-        "title": "Snack Dus",
-        "description": "Berbagai pilihan kue dan jajanan pasar dalam kemasan dus."
+        "title": "Koki Berpengalaman",
+        "description": "Tangan-tangan ahli yang paham betul meracik hidangan Nusantara maupun Western."
       },
       {
-        "title": "Racikan / Piring Terbang",
-        "description": "Layanan piring terbang tradisional untuk resepsi."
+        "title": "Paket Super Lengkap",
+        "description": "Dari Paket Silver hingga Super Diamond, semuanya lengkap dengan Foodstall eksklusif."
       },
       {
-        "title": "Prasmanan",
-        "description": "Menu prasmanan lengkap untuk pernikahan dan acara besar."
+        "title": "Tepat Waktu",
+        "description": "Nggak perlu deg-degan nunggu makanan datang telat, kami terbiasa menangani event besar on-time!"
       },
       {
-        "title": "Tumpeng",
-        "description": "Tumpeng hias untuk syukuran dan perayaan."
+        "title": "Layanan Fleksibel",
+        "description": "Menu dan harga bisa disesuaikan dengan keinginan serta budget acara Anda."
       },
       {
-        "title": "Hantaran Pernikahan",
-        "description": "Hantaran makanan cantik untuk momen pernikahan."
+        "title": "Terpercaya Sejak 2000",
+        "description": "Dua dekade lebih kami melayani masyarakat Kota Sukabumi dan sekitarnya."
       }
     ]
   },
   "menu": {
     "title": "Intip Menu",
-    "subtitle": "Daftar Paket Menu",
-    "description": "Cek daftar paket menu kami atau konsultasikan untuk menyesuaikan dengan permintaan dan budget Anda.",
-    "paket_folder_id": "",
-    "foodstall_folder_id": "",
+    "subtitle": "Bikin Ngiler, Kan?",
+    "description": "Banyak pilihan paket nikmat yang bisa kamu sesuaikan sama kebutuhan resepsi pernikahan dan budget kamu.",
+    "paket_folder_id": "13fob3qIGeJBj1UrTLknId7TifjeAIk9i",
+    "foodstall_folder_id": "1ScIRsdDRe6VGU36moWBkpn6rgwT5P_uK",
     "categories": [
       {
-        "id": "aneka-nasi-box-paket-32k",
-        "name": "ANEKA NASI BOX PAKET 32K",
-        "price": "Rp 30.000",
-        "description": "Menu bisa menyesuikan permintaan",
+        "id": "silver",
+        "name": "Paket Silver (40 Ribu)",
+        "description": "Menu lengkap mulai dari Nasi, Olahan Sapi, Olahan Ayam, Salad/Sop, Dessert, hingga Foodstall (Ice Cream, Baso/Siomay, Jasuke).",
         "image_url": "https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&q=80",
         "drive_id": ""
       },
       {
-        "id": "nasi-tepak",
-        "name": "NASI TEPAK",
-        "price": "Rp 28.000",
-        "description": "Harga sesuai permintaan bisa berubah....",
+        "id": "gold",
+        "name": "Paket Gold (45 Ribu)",
+        "description": "Upgrade dengan tambahan Gado-gado, menu olahan bervariasi, serta tambahan Lemon Tea di bagian Dessert.",
         "image_url": "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&q=80",
         "drive_id": ""
       },
       {
-        "id": "ater-ater-syukuran",
-        "name": "Ater ater syukuran",
-        "price": "Rp 100.000",
-        "description": "harga menyesuikan permintaan",
+        "id": "platinum",
+        "name": "Paket Platinum (50 Ribu)",
+        "description": "Pilihan lauk semakin kaya dengan tambahan Softdrink dan variasi Foodstall premium seperti D'Crepes dan Es Doger.",
         "image_url": "https://images.unsplash.com/photo-1628294895950-9805252327bc?auto=format&fit=crop&q=80",
         "drive_id": ""
       },
       {
-        "id": "nasi-kuning-biru-bento",
-        "name": "Nasi kuning / biru BENTO",
-        "price": "Rp 25.000",
-        "description": "Nasi kuning/biru, mie, telor rawis, nuget 2 pcs, susu UHT, pudding",
+        "id": "diamond",
+        "name": "Paket Diamond (55 Ribu)",
+        "description": "Lebih mewah dengan tambahan Menu Ikan, Tart Cheese, dan Zupa Soup sebagai primadona gubugan Anda.",
         "image_url": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&q=80",
         "drive_id": ""
       },
       {
-        "id": "aneka-tumpeng-mini-sekat",
-        "name": "ANEKA TUMPENG MINI SEKAT",
-        "price": "Rp 28.000",
-        "description": "Plus stiker +2k Tumpeng kuning, urap, telang",
-        "image_url": "https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&q=80",
-        "drive_id": ""
-      },
-      {
-        "id": "aneka-tumpeng-mini",
-        "name": "ANEKA TUMPENG MINI",
-        "price": "Rp 25.000",
-        "description": "Tumpeng kuning, telang",
-        "image_url": "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&q=80",
-        "drive_id": ""
-      },
-      {
-        "id": "aneka-nasi-box-paket-25k",
-        "name": "ANEKA NASI BOX PAKET 25K",
-        "price": "Rp 25.000",
-        "description": "Menu bisa sesuai permintaan semua sdh include KRUPUK dan CENDOK",
-        "image_url": "https://images.unsplash.com/photo-1628294895950-9805252327bc?auto=format&fit=crop&q=80",
-        "drive_id": ""
-      },
-      {
-        "id": "rebusan-25-porsi",
-        "name": "REBUSAN 25 PORSI",
-        "price": "Rp 200.000",
-        "description": "rebusan 3 macam",
-        "image_url": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&q=80",
-        "drive_id": ""
-      },
-      {
-        "id": "jajan-pasar-standar-7-macam",
-        "name": "JAJAN PASAR standar 7 MACAM",
-        "price": "Rp 200.000",
-        "description": "jajan pasar tradisional 7 macam 13 pcs per item",
-        "image_url": "https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&q=80",
-        "drive_id": ""
-      },
-      {
-        "id": "prasmanan-start-from-35k",
-        "name": "PRASMANAN start From 35K",
-        "price": "Rp 35.000",
-        "description": "Minimal order 50 porsi, dibawah 50 porsi beda Harga",
-        "image_url": "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&q=80",
-        "drive_id": ""
-      },
-      {
-        "id": "aneka-nasi-box-paket-28k",
-        "name": "ANEKA NASI BOX PAKET 28k",
-        "price": "Rp 28.000",
-        "description": "Untuk menu bisa sesuai permintaan",
-        "image_url": "https://images.unsplash.com/photo-1628294895950-9805252327bc?auto=format&fit=crop&q=80",
-        "drive_id": ""
-      },
-      {
-        "id": "tumpeng-semeja",
-        "name": "TUMPENG SEMEJA dari 750rb - 2jt",
-        "price": "Rp 750.000",
-        "description": "Tumpeng semeja harga menyesuikan isi dan porsi..CHAT admin untuk kepastian Harga",
-        "image_url": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&q=80",
-        "drive_id": ""
-      },
-      {
-        "id": "hantaran-keranjang",
-        "name": "HANTARAN KERANJANG",
-        "price": "Rp 300.000",
-        "description": "Berbagai macam pilihan : menu sate, menu nasi kuning, menu nasi telang, menu buah",
-        "image_url": "https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&q=80",
-        "drive_id": ""
-      },
-      {
-        "id": "dekorasi-dan-tenda-plafon",
-        "name": "DEKORASI dan TENDA PLAFON",
-        "price": "Mulai dari Rp 1.500.000",
-        "description": "Dekorasi kecil mulai dari 1,5 jt Tdk tersedia tenda biasa, semua berplafon dari harga 1.8 jt ( 8m x 10m ) sudah termasuk lampu hias, belum termasuk blok dinding",
-        "image_url": "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&q=80",
-        "drive_id": ""
-      },
-      {
-        "id": "sepinggan",
-        "name": "SEPINGGAN",
-        "price": "Rp 25.000",
-        "description": "Bisa request isian menu",
-        "image_url": "https://images.unsplash.com/photo-1628294895950-9805252327bc?auto=format&fit=crop&q=80",
-        "drive_id": ""
-      },
-      {
-        "id": "hampers-rantangan-susun",
-        "name": "HAMPERS RANTANGAN SUSUN",
-        "price": "Rp 65.000",
-        "description": "Pesanan H-10 hari",
-        "image_url": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&q=80",
-        "drive_id": ""
-      },
-      {
-        "id": "hampers-rantangan-kecil",
-        "name": "HAMPERS RANTANGAN KECIL",
-        "price": "Rp 50.000",
-        "description": "Pesanan H-10 hari",
-        "image_url": "https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&q=80",
-        "drive_id": ""
-      },
-      {
-        "id": "aneka-bowl",
-        "name": "ANEKA BOWL",
-        "price": "Rp 15.000",
-        "description": "Untuk USDA bisa chat khusus",
-        "image_url": "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&q=80",
-        "drive_id": ""
-      },
-      {
-        "id": "hampers-ketupat-lontong-opor",
-        "name": "HAMPERS KETUPAT/LONTONG OPOR",
-        "price": "Rp 150.000",
-        "description": "Untuk 3 porsi",
-        "image_url": "https://images.unsplash.com/photo-1628294895950-9805252327bc?auto=format&fit=crop&q=80",
-        "drive_id": ""
-      },
-      {
-        "id": "paket-nasi-snack",
-        "name": "PAKET NASI SNACK",
-        "price": "Rp 37.000",
-        "description": "Paket nasi, buah pisang/jeruk, snack 3 macam",
-        "image_url": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&q=80",
-        "drive_id": ""
-      },
-      {
-        "id": "aneka-ater2-hantaran",
-        "name": "ANEKA ATER2 (HANTARAN)",
-        "price": "Rp 55.000",
-        "description": "Setiap menu bisa menyesuikan permintaan dan bisa tambah tas +5k",
-        "image_url": "https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&q=80",
-        "drive_id": ""
-      },
-      {
-        "id": "bento-kecil",
-        "name": "BENTO KECIL",
-        "price": "Rp 15.000",
-        "description": "Nasi kuning, biru, gurih",
-        "image_url": "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&q=80",
-        "drive_id": ""
-      },
-      {
-        "id": "tumpeng-sate",
-        "name": "TUMPENG SATE",
-        "price": "Rp 300.000",
-        "description": "",
-        "image_url": "https://images.unsplash.com/photo-1628294895950-9805252327bc?auto=format&fit=crop&q=80",
-        "drive_id": ""
-      },
-      {
-        "id": "paket-greenleaf",
-        "name": "PAKET EMMY",
-        "price": "Rp 35.000",
-        "description": "Menu bisa menyesuikan keinginan dan kebutuhan",
-        "image_url": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&q=80",
-        "drive_id": ""
-      },
-      {
-        "id": "tumpeng-kemerdekaan",
-        "name": "TUMPENG KEMERDEKAAN",
-        "price": "Rp 400.000",
-        "description": "Harga sesuai request..start @300k",
-        "image_url": "https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&q=80",
-        "drive_id": ""
-      },
-      {
-        "id": "nasi-liwet",
-        "name": "NASI LIWET",
-        "price": "Rp 400.000",
-        "description": "",
-        "image_url": "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&q=80",
-        "drive_id": ""
-      },
-      {
-        "id": "tart-mie",
-        "name": "TART MIE",
-        "price": "Rp 150.000",
-        "description": "Klo tart mie ada ongkir kirim",
-        "image_url": "https://images.unsplash.com/photo-1628294895950-9805252327bc?auto=format&fit=crop&q=80",
-        "drive_id": ""
-      },
-      {
-        "id": "ketupat-lebaran",
-        "name": "KETUPAT LEBARAN",
-        "price": "Rp 4.000",
-        "description": "Hanya tersedia H-1 Lebaran",
-        "image_url": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&q=80",
-        "drive_id": ""
-      },
-      {
-        "id": "hampers",
-        "name": "HAMPERS",
-        "price": "Rp 55.000",
-        "description": "Lengkap box dan pita...50k tanpa box dan pita",
-        "image_url": "https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&q=80",
-        "drive_id": ""
-      },
-      {
-        "id": "ingkung-start-150k",
-        "name": "INGKUNG START 150K",
-        "price": "Rp 150.000",
-        "description": "Harga tergantung permintaan jenis ayam",
-        "image_url": "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&q=80",
-        "drive_id": ""
-      },
-      {
-        "id": "aneka-tumpeng-400k",
-        "name": "ANEKA TUMPENG 400K",
-        "price": "Rp 400.000",
-        "description": "Tumpeng kuning, telang, gudangan, gurih",
-        "image_url": "https://images.unsplash.com/photo-1628294895950-9805252327bc?auto=format&fit=crop&q=80",
-        "drive_id": ""
-      },
-      {
-        "id": "aneka-tumpeng-besar-300k",
-        "name": "ANEKA TUMPENG BESAR 300K",
-        "price": "Rp 300.000",
-        "description": "Tumpeng urap, kuning, telang, gurih",
-        "image_url": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&q=80",
+        "id": "super-diamond",
+        "name": "Paket Super Diamond (60 Ribu)",
+        "description": "Paket sultan terlengkap! Nasi Goreng, Menu Beef Lidah, Menu Ayam, Menu Ikan, hingga Foodstall super mewah.",
+        "image_url": "https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?auto=format&fit=crop&q=80",
         "drive_id": ""
       }
     ]
   },
   "testimonials": {
     "title": "Kata Mereka",
-    "subtitle": "Cerita Manis dari Klien",
-    "description": "Kepuasan Anda adalah prioritas kami.",
-    "testimoni_folder_id": "",
+    "subtitle": "Cerita Manis dari Klien Emmy Catering",
+    "description": "Kepuasan Anda adalah prioritas kami. Lihat apa kata mereka yang telah mempercayakan momen spesialnya pada kami.",
+    "testimoni_folder_id": "12ojqaIsnUn6kS6VyOvvGtWUzAYsEeo8f",
     "items": [
       {
         "id": 1,
-        "name": "Klien Emmy Catering",
-        "event": "Resepsi",
-        "text": "Makanannya enak, penyajian rapi, dan sesuai dengan budget yang kami minta.",
+        "name": "Keluarga Bpk. Hery",
+        "event": "Resepsi Pernikahan",
+        "text": "Paket Super Diamond sangat memuaskan! Zupa Soup dan D'Crepes ludes diserbu tamu. Makanannya enak dan dekorasinya elegan.",
+        "drive_id": "1yN6D3B1n_V38F2l3kXJ8p9oK_0qY2m4z"
+      },
+      {
+        "id": 2,
+        "name": "Ibu Diana",
+        "event": "Hajatan Keluarga",
+        "text": "Pesan Paket Gold untuk acara keluarga. Daging sapi lada hitamnya empuk banget. Foodstall es krim juga bikin anak-anak senang.",
+        "drive_id": ""
+      },
+      {
+        "id": 3,
+        "name": "Rina & Dimas",
+        "event": "Wedding",
+        "text": "Dari awal konsultasi di Sukabumi sampai hari H, pelayanannya ramah banget. Kita pilih Paket Platinum dan tamu pada muji rasa makanannya.",
+        "drive_id": ""
+      },
+      {
+        "id": 4,
+        "name": "Instansi Pemerintah",
+        "event": "Corporate Event",
+        "text": "Menu prasmanan yang dihidangkan selalu konsisten lezatnya. Kambing guling dari menu foodstall adalah favorit kami semua.",
         "drive_id": ""
       }
     ]
@@ -363,14 +163,22 @@
   "documentation": {
     "title": "Galeri Kami",
     "subtitle": "Momen Bahagia Bersama Emmy Catering",
-    "description": "Keseruan di setiap acara yang kami tangani.",
-    "photo_folder_id": "",
-    "video_folder_id": "",
+    "description": "Lihat keseruan dan kehangatan di setiap acara yang kami tangani.",
+    "photo_folder_id": "1VD4hbylxlXOMif-IE2okRfrXCjj-o3Hr",
+    "video_folder_id": "1hg_qr9NnuhooCWqRtquVPgjTu5OjHt9V",
     "photos": [
-      { "id": "p1", "drive_id": "", "placeholder_url": "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80" },
-      { "id": "p2", "drive_id": "", "placeholder_url": "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&q=80" }
+      { "id": "p1", "drive_id": "1oF-3cRt8bQcf8NO15-kZRAbH3s8QTZi-", "placeholder_url": "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80" },
+      { "id": "p2", "drive_id": "", "placeholder_url": "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&q=80" },
+      { "id": "p3", "drive_id": "", "placeholder_url": "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&q=80" },
+      { "id": "p4", "drive_id": "", "placeholder_url": "https://images.unsplash.com/photo-1473093226795-af9932fe5856?auto=format&fit=crop&q=80" },
+      { "id": "p5", "drive_id": "", "placeholder_url": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&q=80" }
     ],
-    "videos": []
+    "videos": [
+      { "id": "v1", "drive_id": "", "placeholder_url": "https://www.w3schools.com/html/mov_bbb.mp4" },
+      { "id": "v2", "drive_id": "", "placeholder_url": "https://www.w3schools.com/html/mov_bbb.mp4" },
+      { "id": "v3", "drive_id": "", "placeholder_url": "https://www.w3schools.com/html/mov_bbb.mp4" },
+      { "id": "v4", "drive_id": "", "placeholder_url": "https://www.w3schools.com/html/mov_bbb.mp4" }
+    ]
   },
   "contact": {
     "whatsapp": ["081546884171", "081563480787", "08158889020"],
@@ -383,9 +191,15 @@
   "brochures": [
     {
       "id": "b1",
-      "name": "Daftar Paket Menu",
+      "name": "Brosur Paket Menu",
       "image_drive_id": "",
       "image_placeholder_url": "https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&q=80"
+    },
+    {
+      "id": "b2",
+      "name": "Brosur Menu Foodstall",
+      "image_drive_id": "",
+      "image_placeholder_url": "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&q=80"
     }
   ],
   "admins": [
